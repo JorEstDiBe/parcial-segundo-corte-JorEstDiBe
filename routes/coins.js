@@ -25,6 +25,5 @@ router.route("/:coinType")
         res.send("Lo sentimos, se encontro un error al procesar la solicitud de busqueda de la moneda, intentelo de nuevo mas tarde...")
     }
 });
-
 module.exports = router;
 
