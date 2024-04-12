@@ -62,27 +62,17 @@ router.route("/:count")
     res.json(limitedUsers);
 });
 
+
 router.post("/", (req, res) => {
-  const { firstName, lastName, email, city, country } = req.body;
-
-  // Validar que se proporcionen nombre, apellido y correo electrónico
-  if (!firstName || !lastName || !email) {
-    return res.status(400).send("Se requieren los parámetros obligatorios: nombre, apellido y correo electrónico.");
-  }
-
-  // Establecer valores predeterminados para ciudad y país si no se proporcionan
-  const newCity = city || "Bogotá";
-  const newCountry = country || "Colombia";
-
-  const newUser = {
-    firstName,
-    lastName,
-    email,
-    city: newCity,
-    country: newCountry
-  };
-
-  res.status(201).json(newUser);
-});
+    const { Name, lastName, email, city, country } = req.body;
+  
+    if (!Name || !lastName || !email) {
+      return res.status(400).send("Los campos de nombre, apellido y correo electrónico son obligatorios... <br><br> Los unicos opcionales son la ciudad y pais");
+    }
+  
+    const newUser = {Name,lastName,email,city,country};
+  
+    res.status(201).json(newUser);
+  });
 
 module.exports = router;
