@@ -1,15 +1,10 @@
 {
-    "builds" : [
-        {
-            "src": "./server.js",
-            "use": "@vercel/node"
-        }
+    "version": 2,
+    "builds": [
+        {"src": "server.js", "use": "@vercel/node"}
     ],
-    "routes" : [
-       {
-        "src": "/.*",
-        "dest": "/"
-       } 
-
+    "routes": [
+        {"handle": "fylesystem"},
+        {"src": "/(.*)", "dest": "./server.js"}
     ]
 }
