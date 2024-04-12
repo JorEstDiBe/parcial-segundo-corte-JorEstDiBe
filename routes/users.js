@@ -35,7 +35,7 @@ const users = [
 
 router.route("/")
 .get((req, res) => {
-    res.send("Bienvendio al modulo de Usuarios <br><br> ");
+    res.send("Bienvendio al modulo de Usuarios <br><br> - Usando la siguiente ruta: 'https://parcial-segundo-corte-jor-est-di-be.vercel.app/users/?'#'sort=DESC||ASC' Podra revisar un listado de nombres de los estudiantes de la clase, donde puede seleccionar cuantos desea ver y en que orden. Tenga en cuenta lo siguiente: <br><br> '#' = numero de datos que quiere ver <br><br> 'ASC' = mostrar datos de manera ascendente <br><br> 'DESC' = mostrar datos de manera descendente <br><br> <br><br> Usando la siguiente ruta: https://parcial-segundo-corte-jor-est-di-be.vercel.app/users. Puede acceder a la creacion de usuarios por medio de Postman o ThunderClient, usando el metodo 'POST' por favor indique los datos necesarios que son: <br><br> - Name <br><br> - Last Name <br><br> - Email <br><br> - Ciudad <br><br> - Pais <br><br> Tenga en cuenta que los datos de la ciudad y pais no son obligatorios.");
 });
 
 function sortUsers(req, res, next) {
