@@ -35,7 +35,7 @@ const users = [
 
 router.route("/")
 .get((req, res) => {
-    res.send("Bienvendio al modulo de Usuarios");
+    res.send("Bienvendio al modulo de Usuarios <br><br> ");
 });
 
 function sortUsers(req, res, next) {

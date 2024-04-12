@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.route("/")
 .get((req, res) => {
-    res.send("Bienvenido al sistema de seguimiento del valor en tiempo real de criptomonedas<br><br>Para poder consultar el valor de la criptomoneda el día de hoy, en la barra de navegación añada /coin/Nombre de la criptomoneda <br><br> Ejemplo: /coin/bitcoin");
+    res.send("Bienvenido al sistema de seguimiento del valor en tiempo real de criptomonedas<br><br>Para poder consultar el valor de la criptomoneda el día de hoy, en la barra de navegación añada: 'https://parcial-segundo-corte-jor-est-di-be.vercel.app/coin/Nombre de la criptomoneda' <br><br> Ejemplo: https://parcial-segundo-corte-jor-est-di-be.vercel.app/coin/bitcoin");
 });
 
 router.route("/:coinType")
