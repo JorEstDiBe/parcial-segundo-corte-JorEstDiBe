@@ -18,7 +18,7 @@ function logger(req, res, next) {
 app.use(logger);
 
 app.get("/",(req,res) =>{
-    res.send("Parcial Segundo Corte Desarrollo de Aplicaciones Web <br><br> Jorge Esteban Diaz Bernal 0000300808");
+    res.send("Parcial Segundo Corte Desarrollo de Aplicaciones Web <br><br> Jorge Esteban Diaz Bernal 0000300808 <br><br> 1. Modulo de Cripto Monedas --> 'https://parcial-segundo-corte-jor-est-di-be.vercel.app/coin'. <br><br> 2. Modulo de Usuarios --> 'https://parcial-segundo-corte-jor-est-di-be.vercel.app/users'.");
 });
 
 app.get("*",(req,res) => {
